@@ -1,0 +1,106 @@
+ body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button.correct {
+  background-color: #28a745;
+}
+
+button.wrong {
+  background-color: #dc3545;
+}
+
+#timer {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#next-btn {
+  margin-top: 20px;
+  display: none;
+}
+
+#score-container {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review-item {
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.review-item p {
+  margin: 5px 0;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.wrong {
+  color: red;
+  font-weight: bold;
+}
+
+.explanation {
+  font-style: italic;
+  color: #333;
+  background: #f9f9f9;
+  padding: 8px;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduQuiz - Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <h1>EduQuiz</h1>
+    <div id="question-container">
+      <div id="question">Question text</div>
+      <div id="choices" class="btn-group"></div>
+    </div>
+    <div id="timer">⏱️ Time Left: <span id="time">15</span> sec</div>
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <div id="score-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
